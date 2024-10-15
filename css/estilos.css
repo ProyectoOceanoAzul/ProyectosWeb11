@@ -1,0 +1,745 @@
+
+/*Google Fons       recomendable realizar la importacion del mismo archivo .css */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+/*bootstrap Iconos*/
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+
+
+/*Para resetear*/
+*{
+
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+
+
+
+    /*
+        outline: 1px solid red;
+    */
+
+
+
+
+    -webkit-box-sizing: border-box;
+
+}
+
+
+
+html,
+body{
+
+    font-family: "Montserrat", sans-serif;
+    
+    /*
+    background-color: var(--colorFondoBody);
+    */
+
+    /*desplazamieento suave cuando se usa navevacion por ancla*/
+    scroll-behavior: smooth scroll;
+
+}
+
+
+/*Estilos generales*/
+:root{
+    --colorFondoBody: #47418c;
+    --colorCabecera: #fff;
+
+
+    --colorTexto1: #47418c;
+    --colorTexto2: #686ec9;
+
+    
+    --colorEstilos1:#686ec9;
+    --colorEstilos2:#47418c;
+    
+    --colorPie: #292645;
+
+}
+
+
+h1{
+
+    font-size: 2.5rem;
+    color: var(--colorTexto1);
+}
+
+h2{
+    font-size: 1.5rem;
+    color: var(--colorTexto2);
+    font-weight: 700;
+}
+
+p{
+    font-size: 1.2rem;
+    font-weight: 300;
+
+    color: var(--colorTexto2);
+    line-height: 1.7rem;
+    margin: 10px 0;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+
+a.btn:hover{
+    opacity: 0.7;
+}
+
+img:hover{
+    opacity: 0.5;
+}
+
+
+
+/*Contenedor General*/
+div.contenedor{
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 20px;
+    overflow: auto;
+}
+
+
+/*banner*/
+div.contenedor__banner{
+    padding: 150px 0;
+
+    height: 100vh;  /*el 100% de la pantall*/
+}
+
+
+div.banner__textos{
+    float: left;
+    width: 50%;
+
+    padding: 50px;
+    text-align: center;
+}
+
+h1.texto__titulo{
+    font-size: 5rem;
+    margin-bottom: 10px;   
+    
+    
+
+    font-weight: 700;
+}
+
+div.banner__imagen{
+    float: right;
+    width: 50%;
+
+
+    padding: 80px 0;    
+    
+}
+
+div.banner__imagen img{
+    width: 70%;
+    
+}
+
+.btn{
+    display: inline-block;
+    padding: 20px 0;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+
+
+    font-size: 18px;
+    width: 150px;
+    text-align: center;
+}
+
+.btn--illus{
+    background-color: var(--colorTexto1);
+    color: #fff;
+    border: 2px solid var(--colorTexto1);    
+}
+
+
+.btn--about{    
+    color: var(--colorTexto1);
+    border: 2px solid var(--colorTexto1);    
+}
+
+
+
+
+/***** Illustrations 1 ******/
+div.contenedor__illustrations{
+    padding: 90px 0;
+}
+
+h2.illustrations__subtitulo{
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+p.illustrations__parrafo{
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    width: 70%;
+    margin-top:30px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;    
+}
+
+
+
+
+
+
+
+div.illustrations__imagen{
+    text-align: center;
+    width: 100%;
+}
+
+
+div.illustrations__imagen img{
+    max-width: 100%;
+    width: 45%;
+}
+
+
+
+
+/***** Illustrations 2 ******/
+div.contenedor__illustrations2{
+    padding: 90px 0;
+}
+
+div.illustrations2__imagen{
+    float: left;
+    width: 50%;
+
+}
+
+div.illustrations2__imagen img{
+    max-width: 100%;
+    width: 60%;
+}
+
+
+div.illustrations2__textos{
+    float: right;
+    width: 50%;
+}
+
+p.illustrations2__parrafo{
+    padding-top: 100px;
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+    text-align: right;
+    font-weight: 200;
+}
+
+
+
+
+
+
+/***** Illustrations 3 ******/
+div.contenedor__illustrations3{
+    padding: 90px 0;
+}
+
+div.illustrations3__imagen{
+    float: right;
+    width: 50%;
+    text-align: right;
+
+
+}
+
+div.illustrations3__imagen img{
+    max-width: 100%;
+    width: 60%;
+}
+
+
+div.illustrations3__textos{
+    float: left;
+    width: 50%;
+}
+
+p.illustrations3__parrafo{
+    padding-top: 100px;
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+    text-align: left;
+    font-weight: 200;
+}
+
+
+/***** Menu ******/
+div.contenedor__superior{
+    text-transform: uppercase;
+    overflow: auto;
+}
+
+h1.superior__logo{
+    font-size: 1.5rem;
+    font-weight: 700;
+
+    float: left;
+    padding: 10px 0;    
+}
+
+ul.superior__menu{
+    float: right;
+    list-style: none;
+    padding-top: 30px;   
+}
+
+ul.superior__menu li{
+    float: left;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+
+ul.superior__menu li a{
+    text-transform: capitalize;
+    font-size: 1rem;
+    
+}
+
+
+div.contenedor__pie{
+    padding: 40px 0;
+}
+
+h4.pie__derechos{
+    text-align: center;
+    font-weight: 300;
+}
+
+
+a.active{
+    text-decoration: underline;
+}
+
+
+
+
+
+div.contenedor__about{
+    padding-top: 90px;
+    padding-bottom: 0;
+    padding-right: 0;
+    padding-left: 0;
+
+}
+
+h2.about__subtitulo{
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+p.about__parrafo{
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    width: 70%;
+    margin-top:30px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;    
+}
+
+
+div.about2_parrafo1{
+    float: left;
+    width: 40%;   
+    
+}
+
+div.about2_parrafo2{
+    float: left;
+    width: 60%;
+    
+}
+
+
+
+
+
+
+div.about2_parrafo1 p{
+    font-size: 2.8rem;
+    line-height: 3.5rem;
+    text-align: left;
+    font-weight: 200;
+
+    padding: 0 10px;
+}
+
+
+
+div.about2_parrafo2 p{
+    padding: 10px 30px;
+
+
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+
+    h4.pie__derechos{
+        font-size: small;
+    }
+
+    span{
+        font-weight: 500;
+    }
+
+
+
+/***************/
+/*responsive 1*/
+@media only screen and  (max-width: 575.98px) and
+                        (max-width: 767.98px) and
+                        (max-width: 991.98px) and
+                        (max-width: 1199.98px) and
+                        (max-width: 1399.98px)
+{
+
+    div.banner__textos{
+        float: none;
+        width: 100%;
+    }
+
+
+    div.banner__imagen{
+        float: none;
+        width: 100%;
+    }
+
+
+    h1.texto__titulo{
+        font-size: 2.3rem;
+        text-align: center;
+    }
+
+
+    header.contenedor__banner{
+        height: 100%;   /********************************** ojo ahi */
+    }
+
+
+
+    /*Illustrations / Aboout--------- menu*/
+    h1.superior__logo{            
+        float: none;
+        text-align: center;
+    }
+    
+    ul.superior__menu{
+        float: none;
+        text-align: center;
+        padding: 0;
+    }
+
+    ul.superior__menu li{
+        float: none;
+        width: 100%;
+
+        display: block;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    ul.menu__opciones li a{
+        display: inline-block;       
+        
+        font-size: 0.9rem;
+    }
+
+
+    /*Illustrations*********************************/
+    p.illustrations__parrafo{
+        width: 100%;
+        text-align: justify;
+        padding: 0 10px 10px 10px;
+    }
+
+
+    div.illustrations__imagen img{
+        width: 100%;
+    }
+
+
+    div.illustrations2__imagen{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    div.illustrations2__imagen img{
+        width: 50%;        
+    }
+
+
+    
+    div.illustrations2__textos{
+        float: none;
+        width: 100%;
+    }
+
+
+
+    div.illustrations2__textos p{
+        font-size: 2rem;
+        padding-top: 10px;
+        
+    }
+
+
+    /***********/
+    
+
+    div.illustrations3__imagen{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    div.illustrations3__imagen img{
+        width: 50%;        
+    }
+
+
+    
+    div.illustrations3__textos{
+        float: none;
+        width: 100%;
+    }
+
+
+
+    div.illustrations3__textos p{
+        font-size: 2rem;
+        padding-top: 10px;
+        
+    }
+
+
+    /*About*********************************/
+    p.about__parrafo{
+        width: 100%;
+        text-align: center;
+        padding: 0 10px 10px 10px;
+    }
+
+
+    div.about2_parrafo1{
+        float: none;
+        width: 100%;
+    }
+
+    div.about2_parrafo2{
+        float: none;
+        width: 100%;
+    }
+
+
+    div.about2_parrafo1 p{
+        font-size: 2rem;
+        padding-top: 10px;
+    }
+
+
+    div.about2_parrafo2 p{
+        text-align: justify;
+        padding: 0 10px 10px 10px;
+    }
+
+
+}
+
+
+
+
+/*Responsive*/
+@media only screen and  (max-width: 768px)
+{
+
+    div.banner__textos{
+        float: none;
+        width: 100%;
+    }
+
+
+    div.banner__imagen{
+        float: none;
+        width: 100%;
+        text-align: center;
+
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+
+    div.banner__imagen img{
+        width: 30%;      
+    }
+
+
+
+
+    header.contenedor__banner{
+        height: 100%;   /********************************** ojo ahi */
+    }
+
+}
+
+
+
+/*Responsive*/
+@media only screen and  (max-width: 820px)
+{
+
+    div.banner__textos{
+        float: none;
+        width: 100%;
+    }
+
+
+    div.banner__imagen{
+        float: none;
+        width: 100%;
+        text-align: center;
+
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+
+    div.banner__imagen img{
+        width: 30%;      
+    }
+
+
+
+
+    header.contenedor__banner{
+        height: 100%;   /********************************** ojo ahi */
+    }
+
+}
+
+
+
+
+
+@media only screen and  (max-width: 834px)
+{
+
+    div.banner__textos{
+        float: none;
+        width: 100%;
+    }
+
+
+
+
+    
+
+    div.banner__imagen{
+        float: none;
+        width: 100%;
+        text-align: center;
+
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+
+    div.banner__imagen img{
+        width: 30%;      
+    }
+
+
+
+    
+
+
+    header.contenedor__banner{
+        height: 100%;   /********************************** ojo ahi */
+    }
+
+}
+
+
+
+
+
+
+
+@media only screen and  (max-width: 884px)
+{
+
+    div.banner__textos{
+        float: none;
+        width: 100%;
+    }
+
+
+
+    div.banner__imagen{
+        float: none;
+        width: 100%;
+        text-align: center;
+
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+
+    div.banner__imagen img{
+        width: 30%;      
+    }
+
+
+
+    
+
+
+    header.contenedor__banner{
+        height: 100%;   /********************************** ojo ahi */
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
